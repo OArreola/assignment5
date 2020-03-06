@@ -1,4 +1,4 @@
-//STEP 1
+// STEP 1
 let favoriteMovies = [
   "Pulp Fiction",
   "Reservoir Dogs",
@@ -189,18 +189,22 @@ window.console.log('"' + favoriteMovies[1] + '" is a great movie!!!');
 //   "Star Wars: Episode V - The Empire Strikes Back",
 //   "Point Break"
 // ];
+// let movie;
+// let index;
 
 // let movies = favoriteMovies.concat(leastFavMovies);
 // movies.reverse(movies.sort());
 
 // let leastFavMoviesIndexes = [];
-// let movie;
 // for (movie in leastFavMovies) {
 //   leastFavMoviesIndexes[movie] = movies.indexOf(leastFavMovies[movie]);
 // }
-// let index;
 // for (index in leastFavMoviesIndexes) {
-//   movies[leastFavMoviesIndexes[index]] = additionalFavoriteMovies[index];
+//   movies.splice(
+//     leastFavMoviesIndexes[index],
+//     1,
+//     additionalFavoriteMovies[index]
+//   );
 // }
 // for (movie of movies) {
 //   window.console.log(movie);
