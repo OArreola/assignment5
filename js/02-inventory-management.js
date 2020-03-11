@@ -89,6 +89,7 @@ function main() {
   let option;
   let inventory = [];
 
+  window.console.clear();
   loadInventory(inventory);
   displayMenu();
 
@@ -114,4 +115,13 @@ function main() {
   }
 }
 
-main();
+function init() {
+  let $ = function(id) {
+    return window.document.getElementById(id);
+  };
+  $("btnInventoryManagement").addEventListener("click", function() {
+    main();
+  });
+}
+
+window.addEventListener("load", init);
